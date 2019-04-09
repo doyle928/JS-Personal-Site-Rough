@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <!-- 
+  _____________$$________________________$$$$
+  ____________$$_____________________________$$
+  ___________$__________________________________$$
+  ___________$$___________________________________$$
+  __________$$__$$______________________$$__________$$
+  ________$$__$$___$$$$_________$$$$____$$__________$$$$
+  ______$$___$$__$$$$__$$_____$$$$__$$_$$_____________$$$
+  ______$$___$$____$$$$_________$$$$___$$_______________$$
+  ______$$___$$________________________$$_______________$$
+  ______$$____$$_______________________$$_____________$$
+  ________$$__$$____$$$$$$_____________$$___________$$$
+  ________$$__$$__$$______$$___________$$_________$$
+  ________$$__$$__$$______$$___________$$_______$$
+  __________$$$$____$$$$$$_____________$$$$____$$$$
+  __________$$$$_____________________$$__$$____$$$
+  ___________$$_$$$$$$$$$$$$_____$$$$______$$$$_$$
+  _____________$$___$$______$$$$$_______________$$
+  _____________$$_____$$$$$$$____________________$$
+  _____________$$________________________________$$
+  ____________$$_________________________________$$
+  ____________$$_________________________________$$
+  ____________$$___________________________________$
+  ____________$$___________________________________$$
+  __________$$_________________________$$___________$
+  __________$$__________$$___________$$_____________$$
+  ________$$__$$________$$_________$$_______________$$
+  ______$$____$$__________$$_______$$_______________$$
+  ______$$____$$____________$$___$$_________________$$
+  ____$$______$$_____________$$_$$_______$$_________$$
+  ____$$______$$________$$____$$$________$$_________$$
+  ____$$______$$________$$____$$$_______$$__________$$
+  ____$$______$$________$$_______________$$__________$$
+  ____$$______$$________$$_______________$$____________$
+  _$$$$_______$$________$$_______________$$____________$$
+  $___$$______$$________$$$$___________$$$$____________$$
+  $___$$______$$________$$__$$_______$$__$$____________$$
+  _$$$$$______$$________$$____$$___$$_____$$___________$$
+  ____$$______$$________$$______$$_______$$___________$$
+  ____$$______$$________$$_____$$________$$___________$$
+  __$$________$$________$$$$$$$$___$$$$$$__$$_________$$
+  __$$________$$________$$______$$$______$$$$_________$$
+  $$________$$__________$$_________$$$$$$__$$__________$
+  $$______$$__________$$$$$$$$$$$$$$$______$$__________$
+  $$_$$_$$$__________$$_____________$$$$$$$__$$_________$
+  _$$$$$$$___________$$______________________$$________$$
+  _____$$__$$__$$__$$_$______________________$$__________$$
+  ______$$$$__$___$__$$______________________$$____________$
+  _______$$___$___$__$________________________$$_$__$$__$$__$
+  _________$$$$$$$$$$__________________________$$_$_$$$$$$$$ -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2f271d" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2f271d" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f271d" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./style/main.css"
+    />
+  </head>
+
+  <body>
+    <span id="fps"></span>
+    <section class="top u-prevent-jump">
+      <h1>Welcome</h1>
+      <div class="scroll-indicator">
+        <div class="scroll-left"></div>
+        <div class="scroll-right"></div>
+      </div>
+    </section>
+    <section class="sunset u-prevent-jump">
+      <div class="sun u-prevent-jump">
+        <div class="ray-group">
+          <div class="ray right deg10"></div>
+          <div class="ray short deg30"></div>
+          <div class="ray long deg50"></div>
+          <div class="ray short  deg70"></div>
+          <div class="ray long  deg90"></div>
+          <div class="ray short  deg110"></div>
+          <div class="ray long  deg130"></div>
+          <div class="ray short  deg150"></div>
+          <div class="ray right  deg170"></div>
+        </div>
+        <div class="circle">
+          <div class="circle-inner"></div>
+        </div>
+      </div>
+      <div class="land u-prevent-jump">
+        <div class="wave-wrapper">
+          <div class="wave-left">
+            <div class="wave wave-part-right"></div>
+            <div class="wave wave-part-left"></div>
+            <div class="wave wave-part-right"></div>
+            <div class="wave wave-part-left"></div>
+            <div class="wave wave-part-right"></div>
+            <div class="wave wave-part-left"></div>
+          </div>
+        </div>
+        <div class="tipi-wrapper">
+          <div class="tipi">
+            <div class="tipi-left"></div>
+            <div class="tipi-door-left"></div>
+            <div class="tipi-bottom"></div>
+            <div class="tipi-right"></div>
+            <div class="tipi-door-right"></div>
+          </div>
+        </div>
+        <canvas id="canvas1" width="300px" height="250px"></canvas>
+        <canvas id="canvas2" width="300px" height="250px"></canvas>
+
+        <div class="wave-wrapper">
+          <div class="wave-right">
+            <div class="wave wave-part-right wave-right-1"></div>
+            <div class="wave wave-part-left wave-right-2"></div>
+            <div class="wave wave-part-right wave-right-3"></div>
+            <div class="wave wave-part-left wave-right-4"></div>
+            <div class="wave wave-part-right wave-right-5"></div>
+            <div class="wave wave-part-left wave-right-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom u-prevent-jump">
+      <p>
+        Thank you for checking out my site. Please check out the links below to
+        see the important things, my other projects and my resume.
+      </p>
+      <div class="skills-section">
+        <p>Current Skills</p>
+        <p class="skills">
+          Javascript, React, AngularJS, Node, Java, C++, JQuery, HTML, CSS,
+          SASS, SQL, Express, Gulp
+        </p>
+      </div>
+    </section>
+    <footer>
+      <a href="https://github.com/doyle928">
+        GitHub
+      </a>
+      <p>-</p>
+      <a href="./Matthew Doyle Resume.pdf">Resume</a>
+      <p>-</p>
+      <a href="https://www.linkedin.com/in/doyle928/">LinkedIn</a>
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <script src="./js/matter.js" type="text/javascript"></script>
+  <script src="./js/trees.js"></script>
+  <script src="./js/fps.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/wave.js"></script>
+</html>
